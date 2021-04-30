@@ -1,6 +1,6 @@
 function checkPrincipal() {
 	principal = document.getElementById('principal');
-	if (principal.value <= 0) {
+	if (!principal.value || principal.value <= 0) {
 		alert('Enter a positive number');
 		principal.focus();
 	}
